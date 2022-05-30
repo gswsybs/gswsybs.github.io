@@ -88,6 +88,8 @@ body {
 }
 
 .select-picker-options-list {
+	overflow-y: scroll;
+	max-height: 400px;
 	width: 100%;
 	padding: 8px 0;
 }
