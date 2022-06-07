@@ -64,7 +64,7 @@
 			var html = '';
 			$this.find("option").each(function () {
 				let _this = $(this);
-				if (_this.text().indexOf(text) != -1) {
+				if (_this.text().toLowerCase().indexOf(text.toLowerCase()) != -1) {
 					html += '<div class="select-picker-options-list-item">';
 					html += '<b class="duihao duihao-nocheck"></b>';
 					html += '<span>' + _this.text() + '</span>';
@@ -137,7 +137,7 @@
 			var html1 = '';
 			$this.find("option").each(function () {
 				let _this = $(this);
-				if (_this.text().indexOf(text) != -1) {
+				if (_this.text().toLowerCase().indexOf(text.toLowerCase()) != -1) {
 					html1 += '<div class="select-picker-options-list-item">';
 					html1 += '<b class="duihao duihao-nocheck"></b>';
 					html1 += '<span>' + _this.text() + '</span>';
